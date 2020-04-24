@@ -1,8 +1,10 @@
 let mongoose = require('mongoose');
 
-let Schema = mongoose.Schema;
+const mongoose = require('mongoose');
 
-let BookSchema = new Schema({
+const Schema = mongoose.Schema;
+
+const BookSchema = new Schema({
     title: {type: String, required: true},
     author: { type: Schema.ObjectId, ref: 'Author', required: true },
     summary: {type: String, required: true},

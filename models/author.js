@@ -1,9 +1,9 @@
-let mongoose = require('mongoose');
-let moment = require('moment'); // For date handling.
+const mongoose = require('mongoose');
+const moment = require('moment'); // For date handling.
 
-let Schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
-let AuthorSchema = new Schema({
+const AuthorSchema = new Schema({
   first_name: { type: String, required: true, max: 100 },
   family_name: { type: String, required: true, max: 100 },
   date_of_birth: { type: Date },
